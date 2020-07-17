@@ -1,4 +1,4 @@
-let header = document.getElementsByTagName("h1")[0];
+const header = document.getElementsByTagName("h1")[0];
 const player1Dice = document.querySelector(".img1");
 const player2Dice = document.querySelector(".img2");
 const rollButton = document.querySelector(".roll");
@@ -10,8 +10,8 @@ rollButton.addEventListener("click", function () {
 
 function rollDice() {
   // generate two random numbers betweem 1-6
-  let randomNumber1 = Math.floor(Math.random() * 6 + 1);
-  let randomNumber2 = Math.floor(Math.random() * 6 + 1);
+  let randomNumber1 = Math.floor(Math.random() * 6) + 1;
+  let randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
   // change dice images depending on random number generated
   player1Dice.setAttribute("src", "images/dice" + randomNumber1 + ".png");
