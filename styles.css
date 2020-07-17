@@ -1,3 +1,29 @@
+:root {
+  --main-color: #00ffdc;
+}
+
+body {
+  background-color: #393e46;
+}
+
+h1 {
+  margin: 30px;
+  font-family: "Lobster", cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: var(--main-color);
+}
+
+p {
+  font-size: 2rem;
+  color: var(--main-color);
+  font-family: "Indie Flower", cursive;
+}
+
+img {
+  width: 80%;
+}
+
 .container {
   width: 70%;
   margin: auto;
@@ -7,29 +33,24 @@
 .dice {
   text-align: center;
   display: inline-block;
+}
+
+.roll {
+  width: 120px;
+  margin-top: 50px;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
 
 }
 
-body {
-  background-color: #393E46;
-}
-
-h1 {
-  margin: 30px;
-  font-family: 'Lobster', cursive;
-  text-shadow: 5px 0 #232931;
-  font-size: 8rem;
-  color: #4ECCA3;
-}
-
-p {
-  font-size: 2rem;
-  color: #4ECCA3;
-  font-family: 'Indie Flower', cursive;
-}
-
-img {
-  width: 80%;
+.btn.roll:hover,
+.btn.roll:visited,
+.btn.roll:active,
+.btn.roll:focus {
+  background-color: #fffe00;
+  border-color: #fffe00;
+  box-shadow: none;
 }
 
 footer {
